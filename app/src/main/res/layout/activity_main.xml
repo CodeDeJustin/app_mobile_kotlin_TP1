@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="202dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/etFirstName"
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        app:layout_constraintEnd_toStartOf="@+id/etLastName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/etLastName"
+        android:textStyle="bold"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etFirstName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/bBirthDate"
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bouton"
+        android:text="@string/bBirthDate"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/great_blue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNumberOfCats"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="@string/etNumberOfCats"
+        android:importantForAutofill="no"
+        android:textStyle="bold"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/etNumberOfDogs"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstName"
+        tools:ignore="LabelFor,VisualLintBounds" />
+
+    <EditText
+        android:id="@+id/etNumberOfDogs"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="@string/etNumberOfDogs"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/etNumberOfCats"
+        app:layout_constraintTop_toBottomOf="@+id/etLastName"
+        tools:ignore="LabelFor,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bouton"
+        android:text="@string/bSubmit"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/great_blue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.500" />
+
+    <Button
+        android:id="@+id/bClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bouton"
+        android:text="@string/bClear"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSubmit"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

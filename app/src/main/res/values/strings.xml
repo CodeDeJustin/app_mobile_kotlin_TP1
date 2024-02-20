@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="etFirstName">First Name</string>
+    <string name="etLastName">Last Name</string>
+    <string name="bBirthDate">BIRTHDATE</string>
+    <string name="etNumberOfCats">Number of cats</string>
+    <string name="etNumberOfDogs">Number of dogs</string>
+    <string name="bSubmit">Submit</string>
+    <string name="bClear">Clear</string>
+    <string name="etFirstName_hint">Prénom</string>
+    <string name="etLastName_hint">Nom</string>
+    <string name="etNumberOfCats_hint">Nombre de chats</string>
+    <string name="etNumberOfDogs_hint">Nombre de chiens</string>
+    <string name="alert_dialog_title">Formulaire incomplet</string>
+    <string name="alert_dialog_message">Veuillez remplir tous les champs et sélectionner votre date de naissance.</string>
+    <string name="ok">OK</string>
+</resources>
